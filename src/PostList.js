@@ -9,7 +9,7 @@ function PostList(props) {
 
     useEffect(()=>{
         console.log("Adding component")
-        axios.get('crud-blog-post.herokuapp.com/posts')
+        axios.get("https://crud-blog-post.herokuapp.com/posts")
         .then((response)=>{
             setData(response.data)
         })
